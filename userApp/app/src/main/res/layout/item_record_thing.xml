@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_type3"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:id="@+id/record_item_3">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/drug"
+        android:layout_margin="20dp">
+        
+    </ImageView>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/item_drugName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="药品名称：布洛芬"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/item_drugType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="药品种类：消炎药"
+            android:textSize="10dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="3dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/item_drugPirce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="药品单价：10元"
+            android:textSize="10dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="3dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/item_drugNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="药品数量：2盒"
+            android:textSize="10dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="3dp">
+        </TextView>
+    </LinearLayout>
+
+
+</LinearLayout>

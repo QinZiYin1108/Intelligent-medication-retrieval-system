@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".recodUI">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/bottomButton_two"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:background="@drawable/my_button">
+
+            <ImageView
+                android:id="@+id/imageBack_two"
+                android:layout_margin="20dp"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/back">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/record_ui_recordCode"
+                android:layout_marginRight="30dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="药单编号："
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:gravity="center">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/docuterID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bottomButton_two"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/item_type2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="140dp"
+                    android:src="@mipmap/docuter"></ImageView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/record_ui_docuterName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="35dp"
+                        android:text="主治医生：尹世超"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        tools:ignore="TextSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/record_ui_docuterCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="0dp"
+                        android:text="医生ID：#D2"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/record_ui_hospitalName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="0dp"
+                        android:text="所属医院：第一人民医院"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/docuterID"
+            android:orientation="horizontal"
+            tools:ignore="NotSibling"
+            android:id="@+id/recodThings">
+
+            <TextView
+                android:id="@+id/record_ui_recordPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:text="需付总价：45元"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/record_ui_recordTime"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:text="下单时间：2022-12-12  00:00:00"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/black"
+            android:layout_below="@id/recodThings"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@id/line">
+        </View>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/fukuanButton"
+            android:layout_below="@id/line"
+            android:layout_marginTop="10dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+
+            tools:listitem="@layout/item_record_thing"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="支付"
+            android:layout_marginLeft="80dp"
+            android:id="@+id/fukuanButton"
+            ></Button>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

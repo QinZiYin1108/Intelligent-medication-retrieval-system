@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/item_type1"
+    android:id="@+id/itemView">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:id="@+id/itemImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/docuter"
+           >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/itemDcName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="尹世超"
+            android:textSize="15dp"
+            android:textColor="#333399" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="-5dp">
+
+        <TextView
+            android:id="@+id/itemDrugName"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="订单药品：aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            android:textSize="17dp"
+            android:textColor="#336699">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/itemDrugTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_2024_1_24_00_41_00"
+            android:textSize="15dp"
+            android:textColor="#333399"
+            android:layout_marginTop="0dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

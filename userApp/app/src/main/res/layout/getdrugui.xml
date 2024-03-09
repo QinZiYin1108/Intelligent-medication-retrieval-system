@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".getDrugUI">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/bottomButton_two"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:background="@drawable/my_button">
+
+            <ImageView
+                android:id="@+id/imageBack_three"
+                android:layout_margin="20dp"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/back">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/record_ui_recordCode"
+                android:layout_marginRight="30dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="扫码取药"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:gravity="center">
+            </TextView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/docuterID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bottomButton_two"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/item_type2"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_marginLeft="-27dp"
+                android:padding="15dp"
+                android:layout_width="360dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/gettotal"
+                ></ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/docuterID"
+            android:orientation="horizontal"
+            tools:ignore="NotSibling"
+            android:id="@+id/recodThings">
+
+            <TextView
+                android:id="@+id/record_ui_recordPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:text="已支付的药单："
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/black"
+            android:layout_below="@id/recodThings"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@id/line">
+        </View>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_record_getDrug"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line"
+            android:layout_marginTop="10dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+
+            tools:listitem="@layout/item_drug_record"/>
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

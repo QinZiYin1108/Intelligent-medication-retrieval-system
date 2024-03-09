@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/reEmail"
+            android:layout_marginTop="30dp"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:hint="请输入注册邮箱"
+            android:textColor="@color/black"></EditText>
+
+        <EditText
+            android:id="@+id/rePassword"
+            android:layout_marginTop="30dp"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:hint="请输入密码"
+            android:textColor="@color/black"></EditText>
+
+        <EditText
+            android:id="@+id/rePasswordCont"
+            android:layout_marginTop="30dp"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:hint="请确认密码"
+            android:textColor="@color/black"></EditText>
+
+        <EditText
+            android:id="@+id/reName"
+            android:layout_marginTop="30dp"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:hint="请输入姓名"
+            android:textColor="@color/black"></EditText>
+
+        <EditText
+            android:id="@+id/reAge"
+            android:layout_marginTop="30dp"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:hint="请输入年龄"
+            android:textColor="@color/black"></EditText>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="-50dp">
+
+            <RadioButton
+                android:id="@+id/radio_man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="60dp"
+                android:text="男" />
+
+            <RadioButton
+                android:id="@+id/radio_woman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女" />
+
+        </RadioGroup>
+
+
+        <EditText
+            android:id="@+id/rePhone"
+            android:layout_marginTop="10dp"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:hint="请输入联系手机号"
+            android:textColor="@color/black"></EditText>
+
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/reButton"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:text="确定"
+                android:textSize="20dp"></Button>
+
+            <Button
+                android:id="@+id/rebackButton"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:text="返回"
+                android:textSize="20dp"></Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
