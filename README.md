@@ -1,5 +1,5 @@
 # Intelligent-medication-retrieval-system
-智能取药系统/n
+智能取药系统\n
 系统功能：
 1.实现医师与患者用户的登录功能 --- ✓
 2.实现医师开药，患者用户于手机APP接受，查看 --- ✓
